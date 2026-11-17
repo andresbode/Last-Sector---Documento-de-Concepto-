@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="LastSector"
+run/main_scene="uid://lw5uyqbbqx7h"
 config/features=PackedStringArray("4.6", "Mobile")
 config/icon="res://icon.svg"
 
