@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://bsl3dxq2nnbi1"]
 
+[ext_resource type="PackedScene" uid="uid://dor2t1ff8sx7p" path="res://scenes/Jugador.tscn" id="1_x2u7e"]
+
 [node name="EscenaJuego" type="Control" unique_id=1167107124]
 layout_mode = 3
 anchors_preset = 0
+
+[node name="Jugador" parent="." unique_id=33030629 instance=ExtResource("1_x2u7e")]
+position = Vector2(373, 342)
