@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b2a54m1oompao"]
+
+[ext_resource type="Script" uid="uid://cblrwtgf3ohm" path="res://scripts/arma.gd" id="1_f2sk0"]
+[ext_resource type="PackedScene" uid="uid://c113s8s42ycyc" path="res://scenes/Bala.tscn" id="2_a8rts"]
+[ext_resource type="Texture2D" uid="uid://b3md223tndt2h" path="res://assets/imagenes/pistola.png" id="2_xfhy3"]
+
+[node name="Pistola" type="Node2D" unique_id=706418453]
+script = ExtResource("1_f2sk0")
+escena_bala = ExtResource("2_a8rts")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=588201408]
+texture = ExtResource("2_xfhy3")
+
+[node name="Boca" type="Marker2D" parent="." unique_id=1979831786]
+position = Vector2(11, -6)

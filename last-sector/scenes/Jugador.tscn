@@ -2,9 +2,10 @@
 
 [ext_resource type="Script" uid="uid://c4veqk07i8l4b" path="res://scripts/jugador.gd" id="1_vio6t"]
 [ext_resource type="Texture2D" uid="uid://hoh34738vbw6" path="res://assets/imagenes/atronauta.png" id="2_h28ku"]
-[ext_resource type="Texture2D" uid="uid://covo4m0is2mt2" path="res://assets/imagenes/escopeta.png" id="3_jt5h6"]
+[ext_resource type="PackedScene" uid="uid://b2a54m1oompao" path="res://scenes/Pistola.tscn" id="3_h28ku"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_jt5h6"]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_jt5h6"]
+height = 44.0
 
 [node name="Jugador" type="CharacterBody2D" unique_id=33030629]
 script = ExtResource("1_vio6t")
@@ -14,10 +15,11 @@ scale = Vector2(3, 3)
 texture = ExtResource("2_h28ku")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1911346244]
-shape = SubResource("CircleShape2D_jt5h6")
+shape = SubResource("CapsuleShape2D_jt5h6")
 
 [node name="Pivote" type="Node2D" parent="." unique_id=1421472629]
+position = Vector2(2, 6)
 
-[node name="Arma" type="Sprite2D" parent="Pivote" unique_id=494343889]
-position = Vector2(7, 10)
-texture = ExtResource("3_jt5h6")
+[node name="Pistola" parent="Pivote" unique_id=706418453 instance=ExtResource("3_h28ku")]
+position = Vector2(1, 3)
+scale = Vector2(0.5, 0.5)
